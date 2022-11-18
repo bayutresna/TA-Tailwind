@@ -1,0 +1,225 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontSize: {
+            'sectiontitle' : [
+              '32px',
+              {
+                fontWeight: '700',
+
+              },
+            ],
+            'contenttitle' : [
+              '24px',
+              {
+                fontWeight: '700',
+
+              },
+            ],
+            'subsection' : ['16px', {
+              fontWeight : '600',
+
+            }],
+            'content': [
+              '15px',
+              {
+                fontWeight: '500',
+
+              },
+            ],
+            'content-small': [
+              '13px',
+              {
+                fontWeight: '500',
+
+              },
+            ],
+            
+          },
+          fontFamily: {
+            sans: ['Inter'],
+            serif: ['Inter'],
+            mono: ['Inter'],
+            display: ['Inter'],
+            body: ['Inter'],
+          },
+          container: {
+            center: true,
+            screens: {
+              xl: '1440px',
+            },
+
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                nightgreen: '#098A5B',
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        input {
+          font-family: "Inter";
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav id="navbar" class="pb-[15px] w-full absolute bg-transparent lg:px-[55px]">
+      <div class="container flex flex-wrap lg:flex-nowrap lg:gap-[410px] justify-between items-center text-[#ffffff]">
+        <div class="logo text-[40px] font-[700px]">
+          <span>Logo</span>
+        </div>
+
+        <button data-collapse-toggle="navbar-defaults" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-defaults" aria-expanded="false"><span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path> 
+          </svg>
+        </button>
+
+        <div id="navbar-defaults" class="hidden lg:block w-full">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="menu text-[16px] font-[700px] flex gap-[80px] items-center">
+              <ul class="flex items-center lg:flex-row md:flex-row flex-col gap-[62px] ">
+                  <li class="">
+                    <a class="active" href=""> Home </a>
+                  </li>
+                  <li>
+                    <div class="item-dropdown flex gap-[5px]">
+                      <a href="#">Services</a>
+                      <img src="img\icon\Vector.png" class="object-contain" alt=""/>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="">Work</a>
+                  </li>
+                  <li>
+                    <a href="">About us</a>
+                  </li>
+                  <li>
+                    <a href="">Blog</a>
+                  </li>
+              </ul>
+              
+              <div class="flex gap-[56px]">
+                <button class="border-[1px] py-[17px]">
+                  <span> Contact </span>
+                  <img src="" alt="" />
+                </button>
+              </div>
+
+              <img src="img/icon/Vector(6).png" alt="" />
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero" class="bg-[url('img/bgatas.png')] pt-[198px] lg:px-[175px] pb-[34px]">
+        <div class="container flex flex-wrap">
+            
+          <div class="title flex flex-col pb-[35px]">
+            <h5 class="text-subsection text-[#098A5B] pb-[20px]">
+              CREATIVE MIND, CREATIVE WORKS.
+            </h5>
+            <h1 class="text-[64px] font-[700] text-[#ffffff] pb-[35px]">
+              We Are Digital Agency
+            </h1>
+            <button class="w-fit px-[22px] py-[28px] border-[1px] border-[#098A5B]">
+              <span class="text-subsection text-[#098A5B]"> GETTING STARTED </span> 
+            </button>
+          </div>  
+            
+          <div class="boxes gap-[104px] flex flex-wrap lg:flex-nowrap">
+            
+            <div class="card pt-[25px] pb-[27px] pl-[14px] pr-[25px] bg-[#313131]">
+              <img src="img/icon/kapal kertas.png" alt="">
+              <div class="content text-[white]">
+                <h3 class="pt-[25px] text-[22px] font-[700]">
+                  Future Concept
+                </h3>
+                <img class="pt-[12px]" src="img/icon/green horizontal line.png" alt="">
+                <p class="pt-[20px] text-[13px] font-[500]">
+                  Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor  incididunt ut labore.
+                </p>
+              </div>
+            </div>
+            
+            <div class="card py-[25px] pl-[14px] pr-[25px] bg-[#313131]">
+              <img src="img/icon/brains.png" alt="">
+              <div class="content text-[white]">
+                <h3 class="pt-[25px] text-[22px] font-[700]">
+                  Big Ideas
+                </h3>
+                <img class="pt-[12px]" src="img/icon/green horizontal line.png" alt="">
+                <p class="pt-[20px] text-[13px] font-[500]">
+                  Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor  incididunt ut labore.
+                </p>
+              </div>
+            </div>
+            
+            <div class="card py-[25px] pl-[14px] pr-[25px] bg-[#313131]">
+              <img src="img/icon/bohlam.png" alt="">
+              <div class="content text-[white]">
+                <h3 class="pt-[25px] text-[22px] font-[700]">
+                  Creative Solutions
+                </h3>
+                <img class="pt-[12px]" src="img/icon/green horizontal line.png" alt="">
+                <p class="pt-[20px] text-[13px] font-[500]">
+                  Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor  incididunt ut labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line absolute left-1/2">
+          <img src="img/icon/green vertical line.png" alt="">
+        </div>
+    </section>
+
+    <section id="services" class="bg-[#101017] pt-[123px]">
+      <div class="container">
+        
+        <div class="title">
+          <div class="konten flex gap-[17px]">
+            <img class="h-fit mt-[23px]" src="img/icon/green horizontal line.png" alt="">
+            <h3 class="text-sectiontitle">
+              Services
+            </h3>
+          </div>
+          <h4 class="text-subsection text-[#098A5B]">OUR SERVICES FOR CLIENTS</h4>
+        </div>
+        
+        <div class="boxes">
+          <img src="" alt="">
+          <div class="konten bg-[#313131] text-white">
+            <h3>
+              Digital Strategy
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+  </body>
+</html>
