@@ -81,10 +81,10 @@
   </head>
   <body>
     
-    <nav id="navbar" class=" w-full absolute bg-transparent">
+    <nav id="navbar" class=" w-full absolute bg-transparent ">
       <div class="container flex flex-wrap px-[20px] lg:flex-nowrap justify-between items-center text-[#ffffff] pt-[34px]">
-        <div class="logo text-[40px] font-[700] lg:pr-[410px]">
-          <span>Logo</span>
+        <div class="logo text-[40px] font-[700] lg:pr-[410px] ">
+          <span class="hover:text-[#098A5B]">Logo</span>
         </div>
 
         <button data-collapse-toggle="navbar-defaults" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-defaults" aria-expanded="false"><span class="sr-only">Open main menu</span>
@@ -94,9 +94,9 @@
         </button>
 
         <div id="navbar-defaults" class="hidden lg:block w-full">
-          <div class="flex flex-col md:flex-row items-center justify-between">
-            <div class="menu text-[16px] font-[700px] flex gap-[80px] items-center">
-              <ul class="flex items-center lg:flex-row md:flex-row flex-col gap-[62px] ">
+          <div class="flex flex-col md:flex-row items-center justify-between lg:bg-transparent bg-[#313131]">
+            <div class="menu text-[16px] font-[700px] flex-col flex md:flex-row pt-5 gap-[80px] items-center">
+              <ul class="flex items-center lg:flex-row md:flex-row flex-col gap-[62px]">
                   <li class="">
                     <a class="active" href=""> Home </a>
                   </li>
@@ -118,15 +118,17 @@
               </ul>
               
               <div class="flex gap-[56px]">
-                <button class="border-[1px] py-[17px]">
-                  <span> Contact </span>
-                  <img src="" alt="" />
+                
+                <button class="border-[3px] border-[#098A5B] px-[10px] py-[17px] flex gap-[10px] hover:bg-[#313131] hover:text-[#098A5B]">
+                  <span class="text-[16px] font-[700]"> Contact </span>
+                  <div class="arrow pt-[10px]">
+                    <img src="img/icon/arrowdown.png" alt="" />
+                  </div> 
                 </button>
                 
               </div>
-              <img src="img/icon/Vector(6).png" alt="" />
+              <button><img src="img/icon/Vector(6).png" alt="" /></button>
               
-
             </div>
           </div>
         </div>
@@ -143,14 +145,14 @@
             <h1 class="text-[64px] font-[700] text-[#ffffff] pb-[35px]">
               We Are Digital Agency
             </h1>
-            <button class="w-fit px-[22px] py-[28px] border-[1px] border-[#098A5B]">
-              <span class="text-subsection text-[#098A5B]"> GETTING STARTED </span> 
+            <button class="w-fit px-[22px] py-[28px] border-[1px] border-[#098A5B] hover:bg-[#098A5B] hover:text-[#313131] text-[#098A5B]">
+              <span class="text-subsection  "> GETTING STARTED </span> 
             </button>
           </div>  
             
           <div class="boxes gap-[104px] flex flex-wrap lg:flex-nowrap">
             
-            <div class="card pt-[25px] pb-[27px] pl-[14px] pr-[25px] bg-[#313131]">
+            <div class="card pt-[25px] pb-[27px] pl-[14px] pr-[25px] bg-[#313131] hover:bg-[#098A5B] hover:opacity-70">
               <img src="img/icon/kapal kertas.png" alt="">
               <div class="content text-[white]">
                 <h3 class="pt-[25px] text-[22px] font-[700]">
@@ -163,7 +165,7 @@
               </div>
             </div>
             
-            <div class="card py-[25px] pl-[14px] pr-[25px] bg-[#313131]">
+            <div class="card py-[25px] pl-[14px] pr-[25px] bg-[#313131] hover:bg-[#098A5B] hover:opacity-70">
               <img src="img/icon/brains.png" alt="">
               <div class="content text-[white]">
                 <h3 class="pt-[25px] text-[22px] font-[700]">
@@ -176,7 +178,7 @@
               </div>
             </div>
             
-            <div class="card py-[25px] pl-[14px] pr-[25px] bg-[#313131]">
+            <div class="card py-[25px] pl-[14px] pr-[25px] bg-[#313131] hover:bg-[#098A5B] hover:opacity-70">
               <img src="img/icon/bohlam.png" alt="">
               <div class="content text-[white]">
                 <h3 class="pt-[25px] text-[22px] font-[700]">
@@ -213,7 +215,7 @@
         <div class="features flex flex-wrap gap-[32px] pt-[42px]">
           <div class="boxes flex flex-wrap lg:flex-nowrap gap-[32px]">
           
-            <div class="card border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
+            <div class="card hover:bg-[#098A5B] border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
               <img class="" src="img/icon/strategy.png" alt="">
               <div class="konten pt-[40px] text-white">
                 <h3 class="text-[29px] font-[700]">
@@ -225,7 +227,7 @@
               </div>
             </div>
   
-            <div class="card border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
+            <div class="card hover:bg-[#098A5B] border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
               <img class="" src="img/icon/cil_pencil.png" alt="">
               <div class="konten pt-[35px] text-white">
                 <h3 class="text-[29px] font-[700]">
@@ -237,9 +239,9 @@
               </div>
             </div>
             
-            <div class="card border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
+            <div class="card hover:bg-[#098A5B] border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
               
-             <div class="konten  text-white pt-[40px] ">
+             <div class="konten  text-white pt-[88px] ">
                 <h3 class="text-[29px] font-[700]">
                   UI Designs
                 </h3>
@@ -253,7 +255,7 @@
 
           <div class="boxes flex flex-wrap lg:flex-nowrap gap-[32px]">
           
-            <div class="card border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
+            <div class="card hover:bg-[#098A5B] border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
               <img class="" src="img/icon/globe.png" alt="">
               <div class="konten pt-[40px] text-white">
                 <h3 class="text-[29px] font-[700]">
@@ -265,7 +267,7 @@
               </div>
             </div>
   
-            <div class="card border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
+            <div class="card hover:bg-[#098A5B] border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
               <img class="" src="img/icon/paper.png" alt="">
               <div class="konten pt-[40px] text-white">
                 <h3 class="text-[29px] font-[700]">
@@ -277,7 +279,7 @@
               </div>
             </div>
             
-            <div class="card border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
+            <div class="card hover:bg-[#098A5B] border-b-[8px] border-[white] pr-[19px] pt-[50px] pb-[59px] pl-[28px] bg-[#313131]">
               <img class="" src="img/icon/logo image.png" alt="">
               <div class="konten pt-[40px] text-white">
                 <h3 class="text-[29px] font-[700]">
@@ -322,14 +324,14 @@
         
 
         <div class="gallery flex flex-wrap gap-[10px] justify-center lg:gap-[40px] pt-[88px]">
-          <img src="img/appleband.png" alt="">
-          <img src="img/applewatch.png" alt="">
-          <img src="img/headphone.png" alt="">
-          <img src="img/laptop.png" alt="">
-          <img src="img/watch2.png" alt="">
-          <img src="img/airpods.png" alt="">
-          <img class="w-[202px] h-[248px]" src="img/iphone11pro.png" alt="">
-          <img class="w-[202px] h-[248px]" src="img/20221113_082910-01.jpeg" alt="">
+          <img class="hover:scale-125" src="img/appleband.png" alt="">
+          <img class="hover:scale-125" src="img/applewatch.png" alt="">
+          <img class="hover:scale-125" src="img/headphone.png" alt="">
+          <img class="hover:scale-125" src="img/laptop.png" alt="">
+          <img class="hover:scale-125" src="img/watch2.png" alt="">
+          <img class="hover:scale-125" src="img/airpods.png" alt="">
+          <img class="w-[202px] h-[248px] hover:scale-125" src="img/iphone11pro.png" alt="">
+          <img class="w-[202px] h-[248px] hover:scale-125" src="img/20221113_082910-01.jpeg" alt="">
         </div>
 
         <div class="line pt-[50px] pb-[40px]">
@@ -342,7 +344,7 @@
     <section id="about" class="bg-[#101017]">
       <div class="container px-[20px] lg:px-[175px]">
         
-        <div class="title">
+        <div class="title pt-[46px]">
           <div class="konten flex gap-[17px]">
             <img class="h-fit mt-[23px]" src="img/icon/green horizontal line.png" alt="">
             <h3 class="text-sectiontitle text-[white]">
@@ -352,10 +354,10 @@
           <h4 class="text-subsection text-[#098A5B]">WE ARE MORE THAN DIGITAL AGENCY</h4>
         </div>
 
-        <div class="explanation">
+        <div class="explanation pt-[41px]">
           <div class="card flex flex-wrap lg:flex-nowrap gap-[50px]">
             
-            <div class="first-box relative">
+            <div class="first-box relative hover:scale-110">
               <img class="" src="img/foto1.png" alt="">
               <div class="text absolute text-[white] bottom-[22px] left-[22px]">
                 <h3 class="text-[29px] font-[700]">
@@ -368,7 +370,7 @@
             </div>
 
             <div class="second-box flex flex-col gap-[34px]">
-              <div class="card relative">
+              <div class="card relative hover:scale-110">
                 <img class="" src="img/foto2.png" alt="">
                 <div class="text absolute text-[white] bottom-[22px] left-[22px]">
                   <h3 class="text-[29px] font-[700]">
@@ -380,7 +382,7 @@
                 </div>
               </div>
 
-              <div class="card relative">
+              <div class="card relative hover:scale-110">
                 <img class="" src="img/foto3.png" alt="">
                 <div class="text absolute text-[white] bottom-[22px] left-[22px]">
                   <h3 class="text-[29px] font-[700]">
@@ -437,7 +439,7 @@
     <section id="testimonial" class="bg-[#313131]">
       <div class="container px-[20px] lg:px-[175px]">
         
-        <div class="title">
+        <div class="title pt-[61px]">
           <div class="konten flex gap-[17px]">
             <img class="h-fit mt-[23px]" src="img/icon/green horizontal line.png" alt="">
             <h3 class="text-sectiontitle text-[white]">
@@ -449,7 +451,7 @@
 
         <div class="listcard flex flex-wrap lg:flex-nowrap gap-[48px]">
           
-          <div class="card bg-[#101017] border-[1px] border-[#777777] mt-[75px] text-[white] relative">
+          <div class="card hover:scale-110 bg-[#101017] border-[1px] border-[#777777] mt-[75px] text-[white] relative">
             <div class="content flex flex-col items-center">
               <div class="quotation flex pt-[44px]">
                 <img src="img/icon/quotation mark.png" alt="">
@@ -489,7 +491,7 @@
             </div>  
           </div>
 
-          <div class="card bg-[#101017] border-[1px] border-[#777777] mt-[75px] text-[white] relative">
+          <div class="card hover:scale-110 bg-[#101017] border-[1px] border-[#777777] mt-[75px] text-[white] relative">
             <div class="content flex flex-col items-center">
               <div class="quotation flex pt-[44px]">
                 <img src="img/icon/quotation mark.png" alt="">
@@ -529,7 +531,7 @@
             </div>  
           </div>
 
-          <div class="card bg-[#101017] border-[1px] border-[#777777] mt-[75px] text-[white] relative">
+          <div class="card hover:scale-110 bg-[#101017] border-[1px] border-[#777777] mt-[75px] text-[white] relative">
             <div class="content flex flex-col items-center">
               <div class="quotation flex pt-[44px]">
                 <img src="img/icon/quotation mark.png" alt="">
@@ -570,9 +572,10 @@
           </div>
         </div>
 
-        <div class="dot pt-[125px] flex justify-center">
+        <div class="dot pt-[125px] lg:flex lg:justify-center invisible ">
           <img src="img/icon/dots.png" alt="">
         </div>
+
         
         <div class="line pt-[30px] pb-[55px]">
           <img class="h-[82px] w-3 relative left-1/2" src="img/icon/green vertical line.png" alt="">
@@ -593,8 +596,8 @@
           <h4 class="text-subsection text-[#098A5B]">CHECK OUT SOME OF OUR NEWS</h4>
         </div>
 
-        <div class="cardlist flex gap-[23px] pt-[67px] bottom-0">
-          <div class="card border-[2px] border-[#098A5B]">
+        <div class="cardlist flex gap-[23px] pt-[67px] flex-wrap lg:flex-nowrap">
+          <div class="card hover:scale-110 border-[2px] border-[#098A5B]">
             <div class="image ">
               <img src="img/VR man.png" alt="">
             </div>
@@ -612,7 +615,7 @@
             </div>
           </div>
 
-          <div class="card border-[2px] border-[#098A5B]">
+          <div class="card hover:scale-110 border-[2px] border-[#098A5B]">
             <div class="image ">
               <img src="img/girls projection.png" alt="">
             </div>
@@ -630,7 +633,7 @@
             </div>
           </div>
 
-          <div class="card border-[2px] border-[#098A5B]">
+          <div class="card hover:scale-110 border-[2px] border-[#098A5B]">
             <div class="image ">
               <img src="img/gift.png" alt="">
             </div>
@@ -654,18 +657,18 @@
     </section>
 
     <section id="mind" class="bg-[url('img/bgstar.jpg')]">
-      <div class="container lg-[]">
+      <div class="container">
         
         <div class="line pt-[85px] pb-[55px]">
           <img class="h-[82px] w-3 relative left-1/2" src="img/icon/green vertical line.png" alt="">
         </div>
 
         <div class="text pt-[93px] text-[white] flex flex-col items-center pb-[109px]">
-          <h1 class="text-[48px] font-[700]">
+          <h1 class="text-[48px] font-[700] text-center">
             Have Any Project in Mind ?
           </h1>
           <div class="button pt-[38px]">
-            <button class="border-[2px] border-[#098A5B] py-[23px] px-[49px]">
+            <button class="border-[2px] hover:bg-[#098A5B] border-[#098A5B] py-[23px] px-[49px]">
               Make Enquiry
             </button>
           </div>
